@@ -1,0 +1,167 @@
+@keyframes myshadow {
+    from {
+        box-shadow: rgba(60, 64, 67, 0) 0px 1px 2px 0px, rgba(60, 64, 67, 0) 0px 1px 3px 1px;
+    }
+
+    to {
+        box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;
+        background-color: rgb(248, 248, 248);
+    }
+}
+
+body {
+    background-color: #edefee;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 3rem auto 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+header {
+    padding: 25px 0;
+}
+header > img {
+    display: block;
+    margin: 0 auto;
+    width: 35%;
+}
+
+nav {
+    background-color: #2b2d3f;
+    padding: 10px 0;
+}
+
+nav ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav a:link {
+    color: #b1b1b1;
+}
+nav a:visited {
+    color: darkkhaki;
+}
+nav a:hover {
+    color: white;
+}
+
+section {
+    display: flex;
+}
+
+section:first-child {
+    background-color: #b5b7bb;
+    background: #b5b7bb url(../images/untitled-whitney-museum.webp) no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+section:first-child .offer {
+    max-width: 920px;
+    margin: 0 auto 4rem;
+}
+
+.offer h1  {
+    color: white;
+    display: inline-block;
+    padding: 0 10px;
+    background-color: rgba(42, 51, 70, 0.459);
+    margin-bottom: 10px;
+}
+.offer span {
+    background-color: #f7f7f7b8;
+    padding: 3px 0;
+    line-height: 1.7rem;
+}
+
+section:not(:first-child) {
+    max-width: 920px;
+    margin: 3rem auto 3rem;
+}
+
+article {
+    flex: 1;
+    padding: 10px;
+
+}
+
+section:not(:first-child) article {
+    border: 1px solid #cfcfcf;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+section:not(:first-child) article:hover {
+    animation: myshadow 1s forwards;
+}
+
+article h2 {
+    text-align: center;
+}
+article img {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #2b2d3f;
+    padding: 1rem 0;
+    color: #a7a7a7;
+}
+
+.footer-container {
+    max-width: 920px;
+    margin: 0 auto;
+    display: flex;
+    padding: 5px;
+}
+
+.footer-container img {
+    width: 60px;
+}
+
+.footer-container div {
+    flex: 1;
+}
+
+.footer-container div:first-child {
+    flex: 0 0 33.33%;
+}
+
+.footer-container p {
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 640px) {
+    header > img {
+        width: 60%;
+    }
+
+    section:first-child {
+        background-size: cover;
+    }
+}
